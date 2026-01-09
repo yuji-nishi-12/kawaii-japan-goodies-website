@@ -11,12 +11,17 @@ import Register from './pages/Register.jsx'
 import OrderPlacement from './pages/OrderPlacement.jsx'
 import Orders from './pages/Orders.jsx'
 import NavigationBar from './components/NavigationBar.jsx'
+import SearchBar from './components/SearchBar'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <>
     {/* Call NavigationBar component */}
     <NavigationBar />
+
+    {/* Call SearchBar component */}
+    <SearchBar />
 
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
 
@@ -52,6 +57,8 @@ const App = () => {
         {/* Route to Orders Page - confirmation and summary of placed orders */}
         <Route path="/orders" element={<Orders />} />
       </Routes>
+
+      <Footer />
     </div>
     </>
   )
