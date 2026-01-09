@@ -58,8 +58,9 @@ const App = () => {
         <Route path="/orders" element={<Orders />} />
       </Routes>
 
-      <Footer />
     </div>
+    {/* Call Footer component */}
+    <Footer />
     </>
   )
 }
