@@ -40,7 +40,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
 
         {/* Route to Item Page - product details */}
-        <Route path="/item/:item-id" element={<Item />} />
+        <Route path="/item/:itemId" element={<Item />} />
 
         {/* Route to Shopping Cart Page - all added items by the user */}
         <Route path="/shopping-cart" element={<ShoppingCart />} />

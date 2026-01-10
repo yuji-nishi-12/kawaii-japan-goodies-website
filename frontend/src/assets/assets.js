@@ -59,6 +59,7 @@ export const products = [
         image: [p_img1],
         category: "Gifts",
         subCategory: "Figurines",
+        sizes: [],
         date: 1716634345448,
         bestseller: true
     },
@@ -70,6 +71,7 @@ export const products = [
         image: [p_img2],
         category: "Gifts",
         subCategory: "Figurines",
+        sizes: [],
         date: 1716634345449,
         bestseller: false
     },
@@ -81,6 +83,7 @@ export const products = [
         image: [p_img3],
         category: "Gifts",
         subCategory: "Body Care",
+        sizes: [],
         date: 1716634345450,
         bestseller: true
     },
@@ -92,6 +95,7 @@ export const products = [
         image: [p_img4],
         category: "Gifts",
         subCategory: "Body Care",
+        sizes: [],
         date: 1716634345451,
         bestseller: false
     },
@@ -139,6 +143,7 @@ export const products = [
         image: [p_img8],
         category: "Men",
         subCategory: "Accessories",
+        sizes: [],
         date: 1716634345455,
         bestseller: true
     },
@@ -150,6 +155,7 @@ export const products = [
         image: [p_img9],
         category: "Men",
         subCategory: "Accessories",
+        sizes: [],
         date: 1716634345456,
         bestseller: false
     },
@@ -245,6 +251,7 @@ export const products = [
         image: [p_img17],
         category: "Women",
         subCategory: "Accessories",
+        sizes: [],
         date: 1716634345464,
         bestseller: false
     },
@@ -256,6 +263,7 @@ export const products = [
         image: [p_img18],
         category: "Women",
         subCategory: "Accessories",
+        sizes: [],
         date: 1716634345465,
         bestseller: true
     },
@@ -267,6 +275,7 @@ export const products = [
         image: [p_img19],
         category: "Women",
         subCategory: "Accessories",
+        sizes: [],
         date: 1716634345466,
         bestseller: true
     },
