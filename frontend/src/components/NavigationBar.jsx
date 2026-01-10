@@ -10,7 +10,7 @@ const NavigationBar = () => {
 
   return (
     // Placeholder for Navigation Bar component
-    <div className="flex items-center justify-between px-7 py-2 font-semibold bg-red-500">
+    <div className="flex items-center justify-between px-7 py-2 font-semibold bg-red-500 fixed w-full z-50">
       {/* Kawaii Japan Goodies logo left side of navigation bar */}
       <Link to="/"><img src={icons.kawaii_logo} className="w-24" alt="Kawaii Japan Goodies Logo" /></Link>
 
@@ -70,9 +70,9 @@ const NavigationBar = () => {
       {/* Mobile menu or menu for small screens */}
       <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visibility ? "w-full" : "w-0"}`}>
         <div className="flex flex-col text-gray-600"> 
-          <div className="flex items-center gap-4 p-3 cursor-pointer">
-            <img className="h-4 rotate-180" src={icons.dropdown_icon} alt="" onClick={() => setVisibility(false)} />
-            <p>Back</p>
+          <div className="flex items-center gap-1 p-3 cursor-pointer">
+            <img className="h-5 rotate-180" src={icons.dropdown_icon} alt="" onClick={() => setVisibility(false)} />
+            <p onClick={() => setVisibility(false)}>Back</p>
           </div>
           <NavLink className="py-2 pl-6 border" to="/" onClick={() => setVisibility(false)}>
             HOME

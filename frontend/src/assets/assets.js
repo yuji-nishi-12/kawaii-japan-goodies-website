@@ -102,7 +102,7 @@ export const products = [
         price: 2250,
         image: [p_img5],
         category: "Men",
-        subCategory: "Topwear",
+        subCategory: "Apparel",
         sizes: ["S", "M", "L"],
         date: 1716634345452,
         bestseller: true
@@ -114,7 +114,7 @@ export const products = [
         price: 100,
         image: [p_img6],
         category: "Men",
-        subCategory: "Topwear",
+        subCategory: "Apparel",
         sizes: ["S", "M", "L"],
         date: 1716634345453,
         bestseller: false
@@ -126,7 +126,7 @@ export const products = [
         price: 1000,
         image: [p_img7],
         category: "Men",
-        subCategory: "Topwear",
+        subCategory: "Apparel",
         sizes: ["S", "M", "L"],
         date: 1716634345454,
         bestseller: true
@@ -184,7 +184,7 @@ export const products = [
         price: 4550,
         image: [p_img12],
         category: "Shoes",
-        subCategory: "Footwear",
+        subCategory: "",
         sizes: ["S", "M", "L"],
         date: 1716634345459,
         bestseller: false
@@ -196,7 +196,7 @@ export const products = [
         price: 6500,
         image: [p_img13],
         category: "Shoes",
-        subCategory: "Footwear",
+        subCategory: "",
         sizes: ["S", "M", "L"],
         date: 1716634345460,
         bestseller: true
@@ -208,7 +208,7 @@ export const products = [
         price: 6000,
         image: [p_img14],
         category: "Shoes",
-        subCategory: "Footwear",
+        subCategory: "",
         sizes: ["S", "M", "L"],
         date: 1716634345461,
         bestseller: false
@@ -220,7 +220,7 @@ export const products = [
         price: 7200,
         image: [p_img15],
         category: "Shoes",
-        subCategory: "Footwear",
+        subCategory: "",
         sizes: ["S", "M", "L"],
         date: 1716634345462,
         bestseller: false
@@ -232,7 +232,7 @@ export const products = [
         price: 3500,
         image: [p_img16],
         category: "Shoes",
-        subCategory: "Footwear",
+        subCategory: "",
         sizes: ["S", "M", "L"],
         date: 1716634345463,
         bestseller: false
@@ -289,7 +289,7 @@ export const products = [
         price: 3750,
         image: [p_img21],
         category: "Women",
-        subCategory: "Topwear",
+        subCategory: "Apparel",
         sizes: ["S", "M", "L"],
         date: 1716634345468,
         bestseller: false
@@ -301,7 +301,7 @@ export const products = [
         price: 3750,
         image: [p_img22],
         category: "Women",
-        subCategory: "Topwear",
+        subCategory: "Apparel",
         sizes: ["S", "M", "L"],
         date: 1716634345469,
         bestseller: false
@@ -313,7 +313,7 @@ export const products = [
         price: 2950,
         image: [p_img23],
         category: "Women",
-        subCategory: "Topwear",
+        subCategory: "Apparel",
         sizes: ["S", "M", "L"],
         date: 1716634345470,
         bestseller: false

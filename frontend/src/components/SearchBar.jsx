@@ -18,11 +18,11 @@ const SearchBar = () => {
         }
     },[location])
 
-// Render search bar only on home and collection pages when showSearch is true
+// Render search bar only on home, collection, about, and contact pages when showSearch is true
   return showSearch && visibility ? (
-    <div className="bg-gray-100 text-center">
+    <div className="bg-gray-100 text-center fixed top-14 w-full z-40 flex items-center justify-center gap-5">
         <div className="inline-flex items-center border border-gray-400 px-5 py-2 my-5 mx-3 rounded-full w-3/4 sm:w-1/2 bg-white">
-            <input className="flex-1 outline-none bg-inherit text-sm" value={search} onChange={(e) => setSearch(e.target.value)} type="text" placeholder="Search items..." />
+            <input className="flex-1 outline-none bg-inherit text-sm" value={search} onChange={(e) => setSearch(e.target.value)} type="text" placeholder="Search item..." />
             <img className="w-7" src={icons.search_icon} alt="" />
         </div>
         <img className="inline w-8 cursor-pointer" onClick={() => setShowSearch(false)} src={icons.close_icon} alt="" />
