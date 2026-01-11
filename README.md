@@ -44,11 +44,14 @@ Clicking a product redirects users to the Product page
 * Increase or decrease product quantity
 * Proceed to checkout
 
-### Orders Page
+### Checkout Page
 * Input delivery information
 * Select payment method
 * Complete transaction
-* Redirects users back to the cart after checkout
+* Redirects users to Orders page
+
+### Orders Page
+* keeps track of orders
 
 ### About Us Page
 * Short description of the store

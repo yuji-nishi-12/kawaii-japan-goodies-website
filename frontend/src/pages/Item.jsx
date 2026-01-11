@@ -1,11 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { StoreContext } from '../context/StoreContext'
+import RelatedItems from '../components/RelatedItems'
 
 const Item = () => {
 
   const { itemId } = useParams() // Get itemId from URL parameters
-  const { products, currency } = useContext(StoreContext)
+  const { products, currency, addToCart } = useContext(StoreContext)
   const [itemData, setItemData] = useState(false)
   const [image, setImage] = useState("")
   const [size, setSize] = useState("")
@@ -70,15 +71,18 @@ const Item = () => {
           </div>
 
           {/* Add to Cart Button */}
-          <button className="bg-red-500 text-white mt-5 px-8 py-3 text-sm active:bg-red-300">ADD TO CART</button>
+          <button className="bg-red-500 text-white mt-5 px-8 py-3 text-sm active:bg-red-300" onClick={() => addToCart(itemData._id, size)}>ADD TO CART</button>
           <hr className="mt-8 sm:w-4/5" />
           <div className="text-sm text-gray-500 mt-5 flex flex-col gap-1">
               <p>100% Japanese authentic product.</p>
               <p>Handled with care and attention to detail.</p>
           </div>
         </div>
-
       </div>
+
+      {/* Display Related Items */}
+      <RelatedItems category={itemData.category} subCategory={itemData.subCategory} />
+
     </div>
   ) : <div className="opacity-0"></div> // Placeholder while loading item data or no item found
 }

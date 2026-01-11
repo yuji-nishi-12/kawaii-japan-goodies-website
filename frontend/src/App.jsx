@@ -1,18 +1,21 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.jsx'
-import Collection from './pages/Collection.jsx'
-import About from './pages/About.jsx'
-import Contact from './pages/Contact.jsx'
-import Item from './pages/Item.jsx'
-import ShoppingCart from './pages/ShoppingCart.jsx'
-import Login from './pages/Login.jsx'
-import Register from './pages/Register.jsx'
-import OrderPlacement from './pages/OrderPlacement.jsx'
-import Orders from './pages/Orders.jsx'
-import NavigationBar from './components/NavigationBar.jsx'
+import Collection from './pages/Collection'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Item from './pages/Item'
+import ShoppingCart from './pages/ShoppingCart'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import Checkout from './pages/Checkout'
+import MyOrders from './pages/MyOrders.jsx'
+import NavigationBar from './components/NavigationBar'
 import SearchBar from './components/SearchBar'
 import Footer from './components/Footer'
+
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
   return (
@@ -24,6 +27,7 @@ const App = () => {
     <SearchBar />
 
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+      <ToastContainer />
 
       {/* Define routes for the application */}
       <Routes>
@@ -51,11 +55,11 @@ const App = () => {
         {/* Route to Register Page - new user registration */}
         <Route path="/register" element={<Register />} />
 
-        {/* Route to OrderPlacement Page - finalizing and placing orders */}
-        <Route path="/order-placement" element={<OrderPlacement />} />
+        {/* Route to Checkout Page - finalizing and placing orders */}
+        <Route path="/checkout" element={<Checkout />} />
 
         {/* Route to Orders Page - confirmation and summary of placed orders */}
-        <Route path="/orders" element={<Orders />} />
+        <Route path="/my-orders" element={<MyOrders />} />
       </Routes>
 
     </div>

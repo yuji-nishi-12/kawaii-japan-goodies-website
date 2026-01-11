@@ -49,8 +49,8 @@ const NavigationBar = () => {
           </Link>
           <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
             <div className="flex flex-col gap-2 w-36 py-5 px-3 bg-slate-100 text-black rounded">
-              <p className="cursor-pointer hover:text-black">My Profile</p>
-              <p className="cursor-pointer hover:text-black">Orders</p>
+              <p className="cursor-pointer hover:text-black">Profile</p>
+              <p className="cursor-pointer hover:text-black">My Orders</p>
               <p className="cursor-pointer hover:text-black">Logout</p>
             </div>
           </div>
@@ -68,7 +68,7 @@ const NavigationBar = () => {
       </div>
 
       {/* Mobile menu or menu for small screens */}
-      <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visibility ? "w-full" : "w-0"}`}>
+      <div className={`fixed top-0 right-0 bottom-0 overflow-hidden bg-white transition-all max-h-60 ${visibility ? "w-full" : "w-0"}`}>
         <div className="flex flex-col text-gray-600"> 
           <div className="flex items-center gap-1 p-3 cursor-pointer">
             <img className="h-5 rotate-180" src={icons.dropdown_icon} alt="" onClick={() => setVisibility(false)} />
