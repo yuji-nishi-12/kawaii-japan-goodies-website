@@ -10,7 +10,7 @@ const NavigationBar = () => {
 
   return (
     // Placeholder for Navigation Bar component
-    <div className="flex items-center justify-between px-7 py-2 font-semibold bg-red-500 fixed w-full z-50">
+    <div className="flex items-center justify-between px-7 py-2 font-semibold bg-red-500 fixed w-full top-0 z-50">
       {/* Kawaii Japan Goodies logo left side of navigation bar */}
       <Link to="/"><img src={icons.kawaii_logo} className="w-24" alt="Kawaii Japan Goodies Logo" /></Link>
 
@@ -44,7 +44,7 @@ const NavigationBar = () => {
 
         {/* Profile icon right side of the navigation bar. Upon clicking, navigate to login page */}
         <div className="group relative">
-          <Link to="/login">
+          <Link to="/register">
             <img className="w-10 cursor-pointer" src={icons.profile_icon} alt="" />
           </Link>
           <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
